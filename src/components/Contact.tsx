@@ -102,7 +102,7 @@ const Contact = () => {
             </div>
             {/* Overlay with branding */}
             <div className="absolute bottom-4 left-4 right-4 bg-background/90 backdrop-blur-sm rounded-lg p-4 border border-border">
-              <p className="font-serif text-foreground">Bar La Esquina</p>
+              <p className="font-serif text-foreground">Anka Loren</p>
               <p className="text-sm text-muted-foreground">Tu bar de toda la vida</p>
             </div>
           </div>
