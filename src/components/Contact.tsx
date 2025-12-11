@@ -47,9 +47,8 @@ const Contact = () => {
               <div>
                 <h3 className="font-serif text-lg text-foreground mb-1">Horario</h3>
                 <div className="text-muted-foreground space-y-1">
-                  <p>Martes - Domingo: 09:00 - 23:00</p>
-                  <p>Cocina: 13:00 - 16:00 y 20:00 - 22:30</p>
-                  <p className="text-primary/70">Lunes cerrado</p>
+                  <p>Lunes - Sábado: 08:30 - 15:30 y 21:00 - 00:00</p>
+                  <p>Domingos: 08:30 - 15:30</p>
                 </div>
               </div>
             </div>
