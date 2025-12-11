@@ -6,16 +6,24 @@ import solomilloCerdo from "@/assets/platos/solomillo-cerdo.jpg";
 import patatasBravas from "@/assets/platos/patatas-bravas.jpg";
 import perdizCazadora from "@/assets/platos/perdiz-cazadora.jpg";
 import bocadilloPerdigon from "@/assets/platos/bocadillo-perdigon.jpg";
+import tablaEmbutidos from "@/assets/platos/tabla-embutidos.jpg";
+import bocadilloLorencito from "@/assets/platos/bocadillo-lorencito.jpg";
+import bocadilloChorizoCiervo from "@/assets/platos/bocadillo-chorizo-ciervo.jpg";
+import bocadilloTabano from "@/assets/platos/bocadillo-tabano.jpg";
 
 const dishes = [
   { src: huevosRotos, name: "Huevos Rotos con Jamón Ibérico", category: "Especialidad" },
   { src: guisoCiervo, name: "Guiso de Carne de Ciervo", category: "Caza" },
-  { src: alitasMiel, name: "Alitas de Pollo con Miel", category: "Tapa" },
-  { src: croquetas, name: "Croquetas Caseras", category: "Tapa" },
-  { src: solomilloCerdo, name: "Solomillo de Cerdo al Horno", category: "Plato" },
-  { src: patatasBravas, name: "Patatas Bravas", category: "Tapa" },
+  { src: tablaEmbutidos, name: "Tabla de Embutidos", category: "Para compartir" },
   { src: perdizCazadora, name: "Perdiz a la Cazadora", category: "Caza" },
+  { src: solomilloCerdo, name: "Solomillo de Cerdo al Horno", category: "Plato" },
+  { src: croquetas, name: "Croquetas Caseras", category: "Tapa" },
+  { src: patatasBravas, name: "Patatas Bravas", category: "Tapa" },
+  { src: alitasMiel, name: "Alitas de Pollo con Miel", category: "Tapa" },
   { src: bocadilloPerdigon, name: "Bocadillo Perdigón", category: "Bocadillo" },
+  { src: bocadilloLorencito, name: "Bocadillo Lorencito", category: "Bocadillo" },
+  { src: bocadilloChorizoCiervo, name: "Bocadillo de Chorizo de Ciervo", category: "Bocadillo" },
+  { src: bocadilloTabano, name: "Bocadillo Tábano", category: "Bocadillo" },
 ];
 
 const FeaturedDishes = () => {
@@ -31,7 +39,7 @@ const FeaturedDishes = () => {
             Especialidades de la <span className="text-gradient-warm italic">casa</span>
           </h2>
           <p className="text-muted-foreground mt-4 max-w-lg mx-auto">
-            Cocina tradicional manchega con productos de la tierra. Caza, guisos caseros y tapas de siempre.
+            Cocina tradicional manchega con productos de la tierra. Caza, guisos caseros, tapas y bocadillos de autor.
           </p>
         </div>
 
