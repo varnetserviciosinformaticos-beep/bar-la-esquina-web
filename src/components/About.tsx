@@ -1,9 +1,9 @@
-import barInterior from "@/assets/bar-interior.jpg";
-import cocktailFeatured from "@/assets/cocktail-featured.jpg";
+import barInterior from "@/assets/interior-clientes.webp";
+import decoracion from "@/assets/decoracion-rustica.webp";
 
 const About = () => {
   return (
-    <section id="nosotros" className="py-24 bg-gradient-dark">
+    <section id="nosotros" className="py-24 bg-gradient-sand">
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -11,7 +11,7 @@ const About = () => {
             Nuestra Historia
           </p>
           <h2 className="text-4xl md:text-5xl font-serif font-bold text-foreground">
-            Más que un <span className="text-gradient-gold italic">bar</span>
+            Más que un <span className="text-gradient-warm italic">bar</span>
           </h2>
         </div>
 
@@ -28,8 +28,8 @@ const About = () => {
             </div>
             <div className="absolute -bottom-8 -right-8 w-48 h-48 z-20 hidden md:block">
               <img
-                src={cocktailFeatured}
-                alt="Cóctel artesanal"
+                src={decoracion}
+                alt="Decoración tradicional"
                 className="w-full h-full object-cover rounded-lg shadow-elegant border-4 border-background"
               />
             </div>
@@ -40,45 +40,44 @@ const About = () => {
           {/* Text Content */}
           <div className="space-y-6 lg:pl-8">
             <h3 className="text-2xl md:text-3xl font-serif text-foreground">
-              Un rincón donde el tiempo se detiene
+              El corazón del pueblo desde siempre
             </h3>
             <p className="text-muted-foreground leading-relaxed">
-              Desde 2015, Bar La Esquina ha sido el refugio de quienes buscan
-              más que una copa. Nacimos con la pasión de crear experiencias
-              únicas, donde cada detalle importa: desde la selección de nuestros
-              destilados premium hasta la atmósfera que envuelve cada noche.
+              Bar La Esquina es mucho más que un lugar donde tomar algo. Es el punto de 
+              encuentro de vecinos y visitantes, donde las historias se comparten y las 
+              tradiciones se mantienen vivas. Con nuestra terraza panorámica, ofrecemos 
+              las mejores vistas del valle mientras disfrutas de la auténtica cocina casera.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Nuestros bartenders son artistas que transforman ingredientes en
-              obras maestras líquidas. Con técnicas clásicas y toques
-              contemporáneos, cada cóctel es una invitación a descubrir nuevos
-              sabores.
+              Nuestra decoración con piezas antiguas, herramientas tradicionales y cerámica 
+              artesanal cuenta la historia de nuestra tierra. Cada rincón tiene su encanto, 
+              cada detalle habla de nuestras raíces.
             </p>
 
             {/* Features */}
             <div className="grid grid-cols-2 gap-6 pt-6">
               <div className="border-l-2 border-primary pl-4">
-                <p className="text-3xl font-serif text-gradient-gold">+50</p>
+                <p className="text-3xl font-serif text-gradient-warm">Terraza</p>
                 <p className="text-sm text-muted-foreground uppercase tracking-wide">
-                  Cócteles de autor
+                  Con vistas al valle
                 </p>
               </div>
               <div className="border-l-2 border-primary pl-4">
-                <p className="text-3xl font-serif text-gradient-gold">9</p>
+                <p className="text-3xl font-serif text-gradient-warm">Casero</p>
                 <p className="text-sm text-muted-foreground uppercase tracking-wide">
-                  Años de experiencia
+                  Cocina tradicional
                 </p>
               </div>
               <div className="border-l-2 border-primary pl-4">
-                <p className="text-3xl font-serif text-gradient-gold">+200</p>
+                <p className="text-3xl font-serif text-gradient-warm">Familiar</p>
                 <p className="text-sm text-muted-foreground uppercase tracking-wide">
-                  Etiquetas de whisky
+                  Ambiente acogedor
                 </p>
               </div>
               <div className="border-l-2 border-primary pl-4">
-                <p className="text-3xl font-serif text-gradient-gold">∞</p>
+                <p className="text-3xl font-serif text-gradient-warm">Eventos</p>
                 <p className="text-sm text-muted-foreground uppercase tracking-wide">
-                  Momentos inolvidables
+                  Celebraciones privadas
                 </p>
               </div>
             </div>

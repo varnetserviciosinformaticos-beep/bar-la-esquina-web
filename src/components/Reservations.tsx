@@ -18,7 +18,6 @@ const Reservations = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
-    // Validate form
     if (!formData.name || !formData.phone || !formData.date || !formData.time) {
       toast({
         title: "Error",
@@ -28,7 +27,6 @@ const Reservations = () => {
       return;
     }
 
-    // Simulate submission
     setIsSubmitted(true);
     toast({
       title: "¡Reserva enviada!",
@@ -42,7 +40,7 @@ const Reservations = () => {
 
   if (isSubmitted) {
     return (
-      <section id="reservas" className="py-24 bg-secondary/20">
+      <section id="reservas" className="py-24 bg-card">
         <div className="container mx-auto px-6">
           <div className="max-w-md mx-auto text-center">
             <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-primary/20 flex items-center justify-center">
@@ -53,7 +51,7 @@ const Reservations = () => {
             </h2>
             <p className="text-muted-foreground mb-6">
               Tu reserva para {formData.guests} personas el {formData.date} a las {formData.time} ha sido recibida.
-              Te contactaremos pronto para confirmarla.
+              Te llamaremos para confirmarla.
             </p>
             <Button variant="elegant" onClick={() => setIsSubmitted(false)}>
               Nueva Reserva
@@ -65,7 +63,7 @@ const Reservations = () => {
   }
 
   return (
-    <section id="reservas" className="py-24 bg-secondary/20">
+    <section id="reservas" className="py-24 bg-card">
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -73,8 +71,11 @@ const Reservations = () => {
             Reservaciones
           </p>
           <h2 className="text-4xl md:text-5xl font-serif font-bold text-foreground">
-            Reserva tu <span className="text-gradient-gold italic">mesa</span>
+            Reserva tu <span className="text-gradient-warm italic">mesa</span>
           </h2>
+          <p className="text-muted-foreground mt-4 max-w-md mx-auto">
+            Para grupos grandes o celebraciones especiales, contáctanos directamente.
+          </p>
         </div>
 
         {/* Form */}
@@ -94,7 +95,7 @@ const Reservations = () => {
                   onChange={handleChange}
                   required
                   maxLength={100}
-                  className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:outline-none focus:border-primary transition-colors text-foreground"
+                  className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:border-primary transition-colors text-foreground"
                   placeholder="Tu nombre"
                 />
               </div>
@@ -110,7 +111,7 @@ const Reservations = () => {
                   onChange={handleChange}
                   required
                   maxLength={20}
-                  className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:outline-none focus:border-primary transition-colors text-foreground"
+                  className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:border-primary transition-colors text-foreground"
                   placeholder="+34 600 000 000"
                 />
               </div>
@@ -131,7 +132,7 @@ const Reservations = () => {
                   onChange={handleChange}
                   required
                   min={new Date().toISOString().split('T')[0]}
-                  className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:outline-none focus:border-primary transition-colors text-foreground"
+                  className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:border-primary transition-colors text-foreground"
                 />
               </div>
               <div>
@@ -145,15 +146,15 @@ const Reservations = () => {
                   value={formData.time}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:outline-none focus:border-primary transition-colors text-foreground"
+                  className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:border-primary transition-colors text-foreground"
                 >
                   <option value="">Seleccionar</option>
-                  <option value="18:00">18:00</option>
-                  <option value="19:00">19:00</option>
+                  <option value="13:00">13:00</option>
+                  <option value="14:00">14:00</option>
+                  <option value="15:00">15:00</option>
                   <option value="20:00">20:00</option>
                   <option value="21:00">21:00</option>
                   <option value="22:00">22:00</option>
-                  <option value="23:00">23:00</option>
                 </select>
               </div>
               <div>
@@ -166,14 +167,14 @@ const Reservations = () => {
                   name="guests"
                   value={formData.guests}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:outline-none focus:border-primary transition-colors text-foreground"
+                  className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:border-primary transition-colors text-foreground"
                 >
-                  {[1, 2, 3, 4, 5, 6, 7, 8].map((num) => (
+                  {[1, 2, 3, 4, 5, 6, 7, 8, 10, 12, 15, 20].map((num) => (
                     <option key={num} value={num}>
                       {num} {num === 1 ? "persona" : "personas"}
                     </option>
                   ))}
-                  <option value="9+">Más de 8</option>
+                  <option value="20+">Más de 20</option>
                 </select>
               </div>
             </div>
@@ -190,8 +191,8 @@ const Reservations = () => {
                 onChange={handleChange}
                 rows={3}
                 maxLength={500}
-                className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:outline-none focus:border-primary transition-colors text-foreground resize-none"
-                placeholder="Ocasión especial, preferencias de mesa..."
+                className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:border-primary transition-colors text-foreground resize-none"
+                placeholder="Celebración especial, preferencias de mesa, alergias..."
               />
             </div>
 
@@ -202,7 +203,7 @@ const Reservations = () => {
           </form>
 
           <p className="text-center text-muted-foreground text-sm mt-6">
-            Te confirmaremos por teléfono o WhatsApp en menos de 2 horas.
+            Te confirmaremos por teléfono. Para grupos grandes, llámanos directamente.
           </p>
         </div>
       </div>
