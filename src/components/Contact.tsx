@@ -77,7 +77,7 @@ const Contact = () => {
               </Button>
               <Button
                 variant="elegant"
-                onClick={() => window.open("https://facebook.com/barlaesquina", "_blank")}
+                onClick={() => window.open("https://www.facebook.com/barankaloren", "_blank")}
               >
                 <Facebook size={18} />
                 Facebook
