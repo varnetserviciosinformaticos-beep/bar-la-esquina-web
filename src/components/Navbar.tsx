@@ -17,8 +17,8 @@ const Navbar = () => {
   const navLinks = [
     { href: "#inicio", label: "Inicio" },
     { href: "#nosotros", label: "Nosotros" },
-    { href: "#menu", label: "Menú" },
-    { href: "#eventos", label: "Eventos" },
+    { href: "#menu", label: "Carta" },
+    { href: "#galeria", label: "Galería" },
     { href: "#contacto", label: "Contacto" },
   ];
 
@@ -34,7 +34,7 @@ const Navbar = () => {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         isScrolled
-          ? "bg-background/95 backdrop-blur-md border-b border-border shadow-elegant"
+          ? "bg-background/95 backdrop-blur-md border-b border-border shadow-warm"
           : "bg-transparent"
       }`}
     >
@@ -47,7 +47,7 @@ const Navbar = () => {
               e.preventDefault();
               scrollToSection("#inicio");
             }}
-            className="text-2xl md:text-3xl font-serif text-gradient-gold tracking-wide"
+            className="text-2xl md:text-3xl font-serif text-gradient-warm tracking-wide"
           >
             La Esquina
           </a>
@@ -88,7 +88,7 @@ const Navbar = () => {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 animate-fade-up">
+          <div className="md:hidden mt-4 pb-4 animate-fade-up bg-background/95 rounded-lg p-4">
             <div className="flex flex-col gap-4">
               {navLinks.map((link) => (
                 <a
