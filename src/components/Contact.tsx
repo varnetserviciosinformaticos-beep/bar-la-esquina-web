@@ -1,4 +1,4 @@
-import { MapPin, Phone, Clock, MessageCircle, Facebook } from "lucide-react";
+import { MapPin, Phone, Clock, MessageCircle, Facebook, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Contact = () => {
@@ -81,6 +81,13 @@ const Contact = () => {
               >
                 <Facebook size={18} />
                 Facebook
+              </Button>
+              <Button
+                variant="elegant"
+                onClick={() => window.open("https://www.instagram.com/barankaloren/", "_blank")}
+              >
+                <Instagram size={18} />
+                Instagram
               </Button>
             </div>
           </div>
