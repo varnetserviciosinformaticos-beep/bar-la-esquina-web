@@ -36,8 +36,7 @@ const Hero = () => {
 
           {/* Main Title */}
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold text-cream leading-tight opacity-0 animate-fade-up delay-200">
-            Bar{" "}
-            <span className="text-gradient-warm italic">La Esquina</span>
+            <span className="text-gradient-warm italic">Anka Loren</span>
           </h1>
 
           {/* Subtitle */}

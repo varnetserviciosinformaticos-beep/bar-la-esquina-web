@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo */}
           <div className="text-center md:text-left">
-            <h3 className="text-2xl font-serif">La Esquina</h3>
+            <h3 className="text-2xl font-serif">Anka Loren</h3>
             <p className="text-sm text-cream/70 mt-1">
               Bar tradicional con vistas
             </p>

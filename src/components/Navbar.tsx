@@ -49,7 +49,7 @@ const Navbar = () => {
             }}
             className="text-2xl md:text-3xl font-serif text-gradient-warm tracking-wide"
           >
-            La Esquina
+            Anka Loren
           </a>
 
           {/* Desktop Navigation */}
