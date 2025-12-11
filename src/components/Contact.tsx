@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 const Contact = () => {
   const handleWhatsApp = () => {
     const phone = "34600000000"; // Replace with actual number
-    const message = encodeURIComponent("Hola, me gustaría hacer una reserva en Bar La Esquina.");
+    const message = encodeURIComponent("Hola, me gustaría hacer una reserva en Anka Loren.");
     window.open(`https://wa.me/${phone}?text=${message}`, "_blank");
   };
 
@@ -32,9 +32,9 @@ const Contact = () => {
               <div>
                 <h3 className="font-serif text-lg text-foreground mb-1">Dirección</h3>
                 <p className="text-muted-foreground">
-                  Calle de la Esquina, 1
+                  Calle Rosario, 5
                   <br />
-                  Pueblo con encanto, España
+                  13593 Solana del Pino, Ciudad Real
                 </p>
               </div>
             </div>
@@ -90,20 +90,20 @@ const Contact = () => {
           <div className="relative">
             <div className="aspect-square rounded-xl overflow-hidden border border-border shadow-elegant">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.4687529706766!2d-3.6879099!3d40.4189933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42289c5b5f8a3f%3A0x4b3e1c5f4f6e4b5!2sSpain!5e0!3m2!1sen!2sus!4v1699999999999!5m2!1sen!2sus"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3108.5!2d-4.0447!3d38.4297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6d3f8a9f8a9f8a9%3A0x1234567890abcdef!2sCalle%20Rosario%2C%205%2C%2013593%20Solana%20del%20Pino%2C%20Ciudad%20Real!5e0!3m2!1ses!2ses"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Ubicación de Bar La Esquina"
+                title="Ubicación de Anka Loren"
               />
             </div>
             {/* Overlay with branding */}
             <div className="absolute bottom-4 left-4 right-4 bg-background/90 backdrop-blur-sm rounded-lg p-4 border border-border">
               <p className="font-serif text-foreground">Anka Loren</p>
-              <p className="text-sm text-muted-foreground">Tu bar de toda la vida</p>
+              <p className="text-sm text-muted-foreground">Calle Rosario, 5 · Solana del Pino</p>
             </div>
           </div>
         </div>
