@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 const Contact = () => {
   const handleWhatsApp = () => {
-    const phone = "34600000000"; // Replace with actual number
+    const phone = "34664295673";
     const message = encodeURIComponent("Hola, me gustaría hacer una reserva en Anka Loren.");
     window.open(`https://wa.me/${phone}?text=${message}`, "_blank");
   };
@@ -62,10 +62,10 @@ const Contact = () => {
               <div>
                 <h3 className="font-serif text-lg text-foreground mb-1">Teléfono</h3>
                 <a
-                  href="tel:+34600000000"
+                  href="tel:+34664295673"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
-                  +34 600 000 000
+                  +34 664 29 56 73
                 </a>
               </div>
             </div>
