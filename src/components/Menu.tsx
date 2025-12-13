@@ -3,28 +3,23 @@ import { Coffee, Wine, Beer, UtensilsCrossed } from "lucide-react";
 
 const menuCategories = [
   {
-    id: "tapas",
-    name: "Tapas y Raciones",
+    id: "raciones",
+    name: "Raciones",
     icon: UtensilsCrossed,
     items: [
-      { name: "Jamón Ibérico", description: "Cortado a mano, con pan tumaca", price: "€14" },
-      { name: "Queso Manchego", description: "Curado, con membrillo casero", price: "€8" },
-      { name: "Tortilla Española", description: "Receta tradicional de la abuela", price: "€6" },
-      { name: "Croquetas Caseras", description: "6 unidades, jamón o bacalao", price: "€7" },
-      { name: "Patatas Bravas", description: "Con salsa brava casera", price: "€5" },
-      { name: "Ensalada Mixta", description: "Tomate, lechuga, cebolla, atún", price: "€6" },
+      { name: "Huevos Rotos", description: "Con jamón y patatas", price: "12 €" },
+      { name: "Perdiz", description: "A la cazadora", price: "15 €" },
+      { name: "Guiso de Ciervo", description: "Receta tradicional", price: "15 €" },
+      { name: "Alitas de Pollo", description: "Crujientes con salsa", price: "8 €" },
+      { name: "Ensalada", description: "Mixta de temporada", price: "7 €" },
     ],
   },
   {
-    id: "platos",
-    name: "Platos del Día",
+    id: "bocadillos",
+    name: "Bocadillos",
     icon: UtensilsCrossed,
     items: [
-      { name: "Cocido Completo", description: "Sopa, garbanzos, carne y verdura (sábados)", price: "€12" },
-      { name: "Migas Extremeñas", description: "Con panceta, pimientos y huevo", price: "€9" },
-      { name: "Caldereta de Cordero", description: "Guiso tradicional", price: "€14" },
-      { name: "Secreto Ibérico", description: "A la plancha con patatas", price: "€15" },
-      { name: "Revuelto de Espárragos", description: "Con gambas", price: "€10" },
+      { name: "Bocadillo", description: "Consulta opciones disponibles", price: "5 €" },
     ],
   },
   {
@@ -32,30 +27,26 @@ const menuCategories = [
     name: "Bebidas",
     icon: Beer,
     items: [
-      { name: "Caña", description: "Cerveza de barril", price: "€1.50" },
-      { name: "Copa de Vino", description: "Tinto, blanco o rosado de la tierra", price: "€2" },
-      { name: "Tinto de Verano", description: "Con gaseosa o limón", price: "€2.50" },
-      { name: "Sangría", description: "Jarra casera", price: "€10" },
-      { name: "Agua Mineral", description: "0.5L", price: "€1.50" },
-      { name: "Refrescos", description: "Coca-Cola, Fanta, etc.", price: "€2" },
+      { name: "Caña", description: "Cerveza de barril", price: "1,50 €" },
+      { name: "Copa de Vino", description: "Tinto, blanco o rosado de la tierra", price: "2 €" },
+      { name: "Tinto de Verano", description: "Con gaseosa o limón", price: "2,50 €" },
+      { name: "Refrescos", description: "Coca-Cola, Fanta, etc.", price: "2 €" },
     ],
   },
   {
     id: "cafes",
-    name: "Cafés y Dulces",
+    name: "Cafés",
     icon: Coffee,
     items: [
-      { name: "Café Solo", description: "Espresso", price: "€1.20" },
-      { name: "Café con Leche", description: "Normal o cortado", price: "€1.50" },
-      { name: "Carajillo", description: "Con brandy o licor", price: "€2.50" },
-      { name: "Tostada", description: "Con tomate y aceite o mantequilla", price: "€2" },
-      { name: "Dulces Caseros", description: "Del día", price: "€2" },
+      { name: "Café Solo", description: "Espresso", price: "1,20 €" },
+      { name: "Café con Leche", description: "Normal o cortado", price: "1,50 €" },
+      { name: "Tostada", description: "Con tomate y aceite o mantequilla", price: "2 €" },
     ],
   },
 ];
 
 const Menu = () => {
-  const [activeCategory, setActiveCategory] = useState("tapas");
+  const [activeCategory, setActiveCategory] = useState("raciones");
 
   const currentCategory = menuCategories.find((cat) => cat.id === activeCategory);
 
