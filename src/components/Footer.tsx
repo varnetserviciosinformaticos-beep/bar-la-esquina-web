@@ -1,4 +1,5 @@
 import { Facebook, Phone, Mail } from "lucide-react";
+import barInterior from "@/assets/bar-interior.webp";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -7,12 +8,19 @@ const Footer = () => {
     <footer className="py-12 bg-wood text-cream">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-          {/* Logo */}
-          <div className="text-center md:text-left">
-            <h3 className="text-2xl font-serif">Anka Loren</h3>
-            <p className="text-sm text-cream/70 mt-1">
-              Bar tradicional con vistas
-            </p>
+          {/* Logo con imagen */}
+          <div className="flex items-center gap-4">
+            <img 
+              src={barInterior} 
+              alt="Anka Loren - Interior del bar" 
+              className="w-16 h-16 rounded-full object-cover border-2 border-cream/30"
+            />
+            <div className="text-center md:text-left">
+              <h3 className="text-2xl font-serif">Anka Loren</h3>
+              <p className="text-sm text-cream/70 mt-1">
+                Bar tradicional con vistas
+              </p>
+            </div>
           </div>
 
           {/* Social Links */}
