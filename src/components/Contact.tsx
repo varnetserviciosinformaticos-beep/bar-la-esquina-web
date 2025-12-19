@@ -1,6 +1,6 @@
 import { MapPin, Phone, Clock, MessageCircle, Facebook, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import terrazaVistas from "@/assets/terraza-vistas.webp";
+import subvencionClm from "@/assets/subvencion-clm.jpg";
 
 const Contact = () => {
   const handleWhatsApp = () => {
@@ -12,12 +12,12 @@ const Contact = () => {
   return (
     <section id="contacto" className="py-24 bg-gradient-sand">
       <div className="container mx-auto px-6">
-        {/* Imagen decorativa */}
-        <div className="mb-12 max-w-4xl mx-auto">
+        {/* Imagen subvención */}
+        <div className="mb-12 max-w-3xl mx-auto">
           <img 
-            src={terrazaVistas} 
-            alt="Terraza con vistas de Anka Loren" 
-            className="w-full h-48 md:h-64 object-cover rounded-xl shadow-elegant"
+            src={subvencionClm} 
+            alt="Empresa beneficiaria de subvenciones de la Junta de Comunidades de Castilla-La Mancha - Cofinanciado por la Unión Europea" 
+            className="w-full object-contain rounded-lg"
           />
         </div>
 
